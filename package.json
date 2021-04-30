@@ -1,0 +1,26 @@
+{
+  "name": "beginner-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letempest/beginner-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letempest/beginner-tailwind/issues"
+  },
+  "homepage": "https://github.com/letempest/beginner-tailwind#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.13",
+    "tailwindcss": "^2.1.2"
+  }
+}
