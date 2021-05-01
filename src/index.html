@@ -10,7 +10,7 @@
     <!--  =============================================================================================== -->
     <!-- =================== header/navigation =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="bg-gradient-to-br from-white to-gray-300">
+    <div class="bg-gradient-to-br from-gray-100 to-gray-300">
       <!-- left circle decoration -->
       <div
         class="absolute top-0 left-0 transform-gpu translate-x-4 translate-y-4"
@@ -43,22 +43,24 @@
 
       <!-- navigation -->
       <div class="relative text-gray-600">
-        <div class="container mx-auto flex justify-between px-6 lg:px-0 py-6">
+        <div class="container mx-auto flex justify-between px-10 py-6">
           <!-- left header section -->
           <div class="flex items-center space-x-4">
             <a href="#" class="font-bold text-2xl text-teal-800"
               >Beginner Tailwind</a
             >
-            <a href="#" class="hidden lg:inline-block hover:text-gray-900"
+            <a href="#about" class="hidden lg:inline-block hover:text-gray-900"
               >About</a
             >
-            <a href="#" class="hidden lg:inline-block hover:text-gray-900"
+            <a href="#learn" class="hidden lg:inline-block hover:text-gray-900"
               >What You'll Learn</a
             >
-            <a href="#" class="hidden lg:inline-block hover:text-gray-900"
+            <a
+              href="#pricing"
+              class="hidden lg:inline-block hover:text-gray-900"
               >Pricing</a
             >
-            <a href="#" class="hidden lg:inline-block hover:text-gray-900"
+            <a href="#faq" class="hidden lg:inline-block hover:text-gray-900"
               >FAQ</a
             >
           </div>
@@ -82,7 +84,7 @@
         <!-- purple bar to help with the section transition -->
         <div class="absolute bottom-0 inset-x-0 h-64 bg-purple-700"></div>
 
-        <div class="container mx-auto px-6 lg:px-0 py-24 text-center">
+        <div class="container mx-auto px-10 py-24 text-center">
           <!-- heading -->
           <h1 class="mb-4 text-5xl lg:text-6xl font-extrabold">
             <span
@@ -136,11 +138,11 @@
     <!--  =============================================================================================== -->
     <!-- =================== overview =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="relative bg-purple-700 lg:pt-8 pb-12 lg:pb-24">
+    <div id="about" class="relative bg-purple-700 lg:pt-8 pb-12 lg:pb-24">
       <!-- gray bar to help section transition -->
       <div class="absolute bottom-0 inset-x-0 h-60 bg-gray-300"></div>
 
-      <div class="relative container mx-auto px-6">
+      <div class="relative container mx-auto px-10">
         <h2 class="mb-10 text-4xl lg:text-6xl font-bold text-purple-100">
           Writing CSS is tough stuff!
         </h2>
@@ -230,7 +232,7 @@
     <!-- =================== about me =============================================           -->
     <!--  =============================================================================================== -->
     <div class="pt-6 lg:pt-12 pb-24 bg-gray-300 lg:text-center">
-      <div class="container mx-auto px-6 lg:px-8">
+      <div class="container mx-auto px-10">
         <h2
           class="mb-3 text-3xl lg:text-6xl font-bold text-teal-900 text-center"
         >
@@ -294,8 +296,8 @@
     <!--  =============================================================================================== -->
     <!-- =================== what you'll learn =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="py-32 bg-gray-200 text-gray-700">
-      <div class="container mx-auto px-6 lg:px-8">
+    <div id="learn" class="py-32 bg-gray-200 text-gray-700">
+      <div class="container mx-auto px-10">
         <!-- header -->
         <div class="relative">
           <h2
@@ -538,8 +540,8 @@
     <!--  =============================================================================================== -->
     <!-- =================== what we'll build =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="py-24 bg-gray-300 text-gray-600">
-      <div class="container mx-auto px-6 lg:px-12">
+    <div id="build" class="py-24 bg-gray-300 text-gray-600">
+      <div class="container mx-auto px-10">
         <div class="mb-8 text-center">
           <h2 class="mb-2 text-3xl md:text-5xl text-gray-800">
             What We'll build in this course
@@ -657,12 +659,12 @@
     <!--  =============================================================================================== -->
     <!-- =================== pricing =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="relative bg-blue-600 py-32 text-blue-200">
+    <div id="pricing" class="relative bg-blue-600 py-32 text-blue-200">
       <!-- gray box for the top section -->
       <div class="absolute top-0 inset-x-0 h-48 bg-gray-300"></div>
 
       <div
-        class="container mx-auto px-6 lg:px-8 flex flex-col lg:flex-row justify-evenly items-center lg:space-x-8 space-y-4 lg:space-y-0 text-center"
+        class="container mx-auto px-10 flex flex-col lg:flex-row justify-evenly items-center lg:space-x-8 space-y-4 lg:space-y-0 text-center"
       >
         <!-- left box -->
         <div
@@ -733,17 +735,21 @@
     <!--  =============================================================================================== -->
     <!-- =================== faq =============================================           -->
     <!--  =============================================================================================== -->
-    <div class="bg-gray-800 py-32 text-gray-400">
-      <div class="container mx-auto px-6 lg:px-8">
+    <div id="faq" class="bg-gray-800 py-32 text-gray-400">
+      <div class="container mx-auto px-10">
         <h2 class="mb-12 text-3xl text-center font-bold">
           Frequently Asked Questions
         </h2>
 
         <!-- grid of questions -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 text-justify">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 text-justify"
+        >
           <!-- questions -->
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Do I need to know CSS?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Do I need to know CSS?
+            </h3>
             <p>
               This course is aimed at people that have some CSS knowledge and
               want to learn Tailwind. I do talk through CSS concepts and why
@@ -753,67 +759,199 @@
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Is there course support?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Is there course support?
+            </h3>
             <p>
-              You can email me directly at any time and we also have a <a href="#" class="text-blue-400 hover:underline">Discord&nbsp;community</a> where you gain exclusive channel access.
+              You can email me directly at any time and we also have a
+              <a href="#" class="text-blue-400 hover:underline"
+                >Discord&nbsp;community</a
+              >
+              where you gain exclusive channel access.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Can I use the code in my own projects?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Can I use the code in my own projects?
+            </h3>
             <p>
-              Definitely! All of the code in this course is yours to use in your sites, apps, projects, whatever.
+              Definitely! All of the code in this course is yours to use in your
+              sites, apps, projects, whatever.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">What if I don't like it?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              What if I don't like it?
+            </h3>
             <p>
-              I offer a lifetime refund policy. If you ever feel like you didn't gain value from this course, then you can request a refund from your course dashboard (totally automated process, no questions asked).
+              I offer a lifetime refund policy. If you ever feel like you didn't
+              gain value from this course, then you can request a refund from
+              your course dashboard (totally automated process, no questions
+              asked).
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">How do I login and view the course?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              How do I login and view the course?
+            </h3>
             <p>
-              You can login at learn.better.dev. Use the login button in the top right.
+              You can login at learn.better.dev. Use the login button in the top
+              right.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Is there a student discount?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Is there a student discount?
+            </h3>
             <p>
-              Yup! 50% off! Email me at chris@better.dev with your student id and I'll send you a discount code.
+              Yup! 50% off! Email me at chris@better.dev with your student id
+              and I'll send you a discount code.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Is there purchase parity for my country?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Is there purchase parity for my country?
+            </h3>
             <p>
-              Yup! Email me at chris@better.dev and I'll send you a purchase power parity code.
+              Yup! Email me at chris@better.dev and I'll send you a purchase
+              power parity code.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">Is there an affiliate program?</h3>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              Is there an affiliate program?
+            </h3>
             <p>
-              Yup! You get 50% of every sale that you bring in. You can sign up for a course and turn on affiliate mode from your dashboard at learn.better.dev. Or you can email me at chris@better.dev.
+              Yup! You get 50% of every sale that you bring in. You can sign up
+              for a course and turn on affiliate mode from your dashboard at
+              learn.better.dev. Or you can email me at chris@better.dev.
             </p>
           </div>
 
           <div class="p-8 border-2 border-gray-500 rounded-lg">
-            <h3 class="mb-3 text-gray-200 font-bold text-xl">I have more questions!</h3>
-            <p>
-              Drop me an email at chris@better.dev. Let's chat.
-            </p>
+            <h3 class="mb-3 text-gray-200 font-bold text-xl">
+              I have more questions!
+            </h3>
+            <p>Drop me an email at chris@better.dev. Let's chat.</p>
           </div>
-
+        </div>
       </div>
     </div>
 
     <!--  =============================================================================================== -->
     <!-- =================== footer/newsletter =============================================           -->
     <!--  =============================================================================================== -->
+    <div
+      class="relative py-24 bg-gradient-to-br from-gray-100 to-gray-300 text-gray-600"
+    >
+      <!-- circles -->
+      <div class="absolute top-0 left-0 transform translate-y-6 translate-x-6">
+        <div
+          class="absolute w-48 h-48 rounded-full bg-gradient-to-br from-teal-100 to-teal-200 opacity-50"
+        ></div>
+        <div
+          class="absolute w-48 h-48 rounded-full bg-gradient-to-br from-purple-100 to-purple-200 opacity-50 ml-20"
+        ></div>
+        <div
+          class="absolute w-48 h-48 rounded-full bg-gradient-to-br from-red-100 to-red-200 opacity-50 ml-10 mt-20"
+        ></div>
+      </div>
+
+      <div class="relative container mx-auto px-10">
+        <!-- top footer -->
+        <div class="lg:flex justify-between space-y-12 lg:space-y-0">
+          <!-- newsletter -->
+          <div class="flex flex-col justify-center">
+            <h4
+              class="mb-4 font-bold text-2xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500"
+            >
+              Get updates on this course
+            </h4>
+            <form action="" method="POST" class="flex">
+              <input
+                type="email"
+                name="email"
+                placeholder="super@secret.com"
+                class="w-full p-3 rounded-l outline-none border-2 border-r-0 border-gray-400 focus:border-purple-400 placeholder-gray-300"
+              />
+              <button
+                type="submit"
+                class="p-3 bg-purple-300 text-purple-100 rounded-r"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <!-- links -->
+          <div
+            class="text-center lg:text-right md:flex md:justify-center md:space-x-8 lg:space-x-18 space-y-8 md:space-y-0"
+          >
+            <div class="space-y-2">
+              <p class="mb-3 font-bold text-gray-400 uppercase tracking-widest">
+                Company
+              </p>
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >About</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Blog</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Careers</a
+              >
+            </div>
+            <div class="space-y-2">
+              <p class="mb-3 font-bold text-gray-400 uppercase tracking-widest">
+                Product
+              </p>
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Pricing</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Documentation</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Guides</a
+              >
+            </div>
+            <div class="space-y-2">
+              <p class="mb-3 font-bold text-gray-400 uppercase tracking-widest">
+                Legal
+              </p>
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Terms</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Privacy</a
+              >
+              <a href="" class="block hover:text-gray-800 hover:underline"
+                >Rules</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom footer -->
+        <div
+          class="pt-4 mt-16 md:flex justify-between border-t border-gray-300 text-sm text-center md:text-left space-y-4 md:space-y-0"
+        >
+          <!-- copyright -->
+          <div>Copyright &copy; 2020 - 2025</div>
+          <!-- links -->
+          <div class="space-x-4">
+            <a href="#">Discord</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="index.js"></script>
   </body>
